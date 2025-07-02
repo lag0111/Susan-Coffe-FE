@@ -1,0 +1,14 @@
+.nav-item .dropdown-menu {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block; 
+}
+
+.nav-item .dropdown-menu {
+    z-index: 1000;
+}

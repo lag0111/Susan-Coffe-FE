@@ -29,7 +29,7 @@ export default function Register() {
         }),
         onSubmit: async (values, { setSubmitting, setFieldError }) => {
             try {
-                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/users/`, {
+                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}users/`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

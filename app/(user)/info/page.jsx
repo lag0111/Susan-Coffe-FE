@@ -24,7 +24,7 @@ export default function Info() {
         const getUser = async () => {
             console.log(tokenValue);
             try {
-                const res = await fetch('http://localhost:3003/users/detailuser', {
+                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}users/detailuser`, {
                     headers: {
                         Authorization: `Bearer ${tokenValue}`,
                     },

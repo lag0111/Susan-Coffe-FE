@@ -11,7 +11,7 @@ export default function NameUser() {
 
     const fetchUserInfo = async (tokenValue) => {
         try {
-            const res = await fetch('http://localhost:3003/users/detailuser', {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/users/detailuser`, {
                 headers: {
                     Authorization: `Bearer ${tokenValue}`,
                 },

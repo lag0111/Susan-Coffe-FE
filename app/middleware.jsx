@@ -11,7 +11,7 @@ export async function middleware(request) {
 
     try {
         // Kiểm tra tính hợp lệ của token
-        const res = await fetch('http://localhost:3003/users/checktoken', {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}users/checktoken`, {
             headers: {
                 Authorization: `Bearer ${token}`, // Giả định token là chuỗi
             },

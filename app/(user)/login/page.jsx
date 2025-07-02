@@ -11,7 +11,7 @@ export default function Login() {
 
     const router = useRouter()
     const dispatch = useDispatch()
-    const url = 'http://localhost:3003/users/login/'
+    const url = `${process.env.NEXT_PUBLIC_API_URL}users/login/`
 
     const formik = useFormik({
         initialValues: {
